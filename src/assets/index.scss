@@ -1,0 +1,38 @@
+.page {
+  width: 100%;
+  height: 100%;
+  .half {
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px 50px 50px;
+  }
+  .left {
+    @extend .half;
+    background-color: red;
+  }
+  .right {
+    @extend .half;
+    background-color: orange;
+  }
+}
+
+.beautifier {
+  .buttons {
+    width: 100%;
+    height: 100%;
+    float: left;
+    .ms-Button {
+      margin: 5px 5px 5px 5px;
+    }
+  }
+  &-text {
+    background-color: gray;
+    .CodeMirror {
+      height: 90%;
+    }
+  }
+}
+
+.error {
+  background-color: red;
+}
