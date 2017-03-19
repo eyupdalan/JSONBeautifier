@@ -60,7 +60,6 @@ export function beautify(input) {
         try {
             jsonlint.parse(newText);
         } catch (e) {
-            // retrieve line number from error string
             lineMatches = getErrorLines(e);
             type = "error";
             message = "JSON is not valid: " + e;
