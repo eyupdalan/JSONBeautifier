@@ -6,7 +6,8 @@
   "scripts": {
     "start": "yarn run open:src",
     "open:src": "babel-node tools/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "babel-node tools/server.js"
   },
   "author": "eyupdalan",
   "license": "ISC",
