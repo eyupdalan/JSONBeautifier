@@ -23,7 +23,7 @@ module.exports = {
                 test: /\.svg$/, loader: 'svg-loader?pngScale=2'
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                test: /\.(eot|svg|ttf|woff|woff2|png)$/,
                 loader: 'file-loader'
             }
         ]
