@@ -10,11 +10,7 @@ module.exports = {
                 include: [
                     path.resolve(__dirname, "src")
                 ],
-                test: /\.jsx?$/,
-                query: {
-                    plugins: ['transform-runtime'],
-                    presets: ['es2015', 'react']
-                }
+                test: /\.jsx|\.js?$/
             },
             {
                 loaders: ['style-loader', 'css-loader', 'sass-loader'],
@@ -37,7 +33,6 @@ module.exports = {
         './src/index'
     ],
     plugins: [
-        new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             compress: {
