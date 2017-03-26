@@ -10,7 +10,7 @@
     "prebuild": "npm-run-all clean-public build:html",
     "build": "babel-node tools/build.js",
     "postbuild": "babel-node tools/server.js",
-    "start": "yarn install && yarn run open:src",
+    "start": "yarn run open:src",
     "open:src": "babel-node tools/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "web": "babel-node tools/server.js"
