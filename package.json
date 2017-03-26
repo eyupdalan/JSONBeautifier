@@ -4,13 +4,13 @@
   "description": "JSON Beautifier",
   "main": "index.js",
   "scripts": {
-    "clean-public": "yarn run remove-dist && mkdir dist",
+    "clean-public": "npm run remove-dist && mkdir dist",
     "remove-dist": "node_modules/.bin/rimraf ./dist",
     "build:html": "babel-node tools/buildHtml.js",
     "prebuild": "npm-run-all clean-public build:html",
     "build": "babel-node tools/build.js",
     "postbuild": "babel-node tools/server.js",
-    "start": "yarn run open:src",
+    "start": "npm run open:src",
     "open:src": "babel-node tools/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "web": "babel-node tools/server.js"
